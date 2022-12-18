@@ -1,0 +1,42 @@
+@import url("animation.css");
+body {
+    padding-top: 200px;
+}
+section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 480px;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 330px;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+.img2 {
+    position: absolute;
+    width: 230px;
+    margin-top: 200px;
+    animation: first-car 7s cubic-bezier(0.99, 1.02, 1, 1.03) 0s infinite
+        reverse none;
+}
+.img1 {
+    position: absolute;
+    margin-top: 70px;
+    width: 230px;
+    right: 10px;
+    transform: rotateY(180deg);
+    z-index: 20;
+    animation: second-car 8s cubic-bezier(0.42, 0, 0.31, 0.75) 0s infinite
+        reverse none;
+    transform: rotateY(360deg);
+}

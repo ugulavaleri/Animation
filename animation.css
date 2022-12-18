@@ -1,0 +1,16 @@
+@keyframes first-car {
+    from {
+        left: 10px;
+    }
+    to {
+        left: 100%;
+    }
+}
+@keyframes second-car {
+    from {
+        right: -10px;
+    }
+    to {
+        right: 100%;
+    }
+}
