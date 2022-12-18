@@ -14,3 +14,27 @@
         right: 100%;
     }
 }
+@keyframes police-red-light {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: none;
+    }
+}
+@keyframes police-blue-light {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: none;
+    }
+}
+@keyframes shop-title {
+    from {
+        color: #8aefb1;
+    }
+    to {
+        color: #cb8b89;
+    }
+}

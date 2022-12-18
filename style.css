@@ -40,3 +40,68 @@ section::before {
         reverse none;
     transform: rotateY(360deg);
 }
+.police-car {
+    width: 200px;
+}
+.police-car-div {
+    display: inline-block;
+    position: relative;
+    margin-left: 300px;
+}
+.red-light {
+    width: 13px;
+    height: 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 24px;
+    left: 103px;
+    animation: police-red-light 1s cubic-bezier(0.99, 1.02, 1, 1.03) 2s infinite
+        alternate none;
+}
+.blue-light {
+    width: 20px;
+    height: 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 23px;
+    left: 130px;
+    animation: police-blue-light 1s cubic-bezier(0.99, 1.02, 1, 1.03) 1s
+        infinite alternate none;
+}
+.shop-div {
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.closed-shop {
+    position: absolute;
+    width: 350px;
+    margin-top: -150px;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+.closed-shop:hover {
+    opacity: 0;
+}
+.opened-shop {
+    width: 350px;
+    margin-top: -150px;
+}
+.shop-title {
+    font-size: 33px;
+    font-weight: 600;
+    position: absolute;
+    top: -130px;
+    left: 135px;
+    animation: shop-title 1s linear 0s infinite alternate none;
+}
+.paragraph-div {
+    display: inline-block;
+    vertical-align: top;
+}
+.paragraph-div p {
+    font-weight: 600;
+}
